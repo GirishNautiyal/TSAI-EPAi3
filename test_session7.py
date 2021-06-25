@@ -127,6 +127,10 @@ def test_next_fibonacci_number_true():
 
     assert 8 == func1(), "The next_fibonacci_number function does not work properly"
 
+def test_next_fibonacci_number_invalid_args():
+    with pytest.raises(TypeError):
+        func1 = session7.next_fibonacci_number(1)
+
 def test_add():
     assert 6 == (session7.add(4,2)), "The add function does not work properly"
 
